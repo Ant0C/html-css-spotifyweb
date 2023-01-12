@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 img{
@@ -73,19 +74,42 @@ a{
 
 /* Player */
 
-.viewport-aside .row{
+.row-player{
     justify-content: space-between;
     align-items: center;
 }
 
 .col_player{
-    flex-basis: calc(100%/6);
+    flex-basis: calc(100%/5);
     color: #737373;
 }
 
-.side_player_left div:first-child{
+.col_player:nth-child(2){
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+/* Parte centrale player */
+
+.top_player{
+    display: flex;
+    align-items: center;
+}
+
+.button_player:nth-child(3){
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.button_player{
+    margin-left: 20px;
+    font-size: 2vw;
+    color: white;
+}
+
+/* Parti laterali player */
 
 .side_player{
     display: flex;
@@ -102,17 +126,34 @@ a{
     padding: 20px 10px;
 }
 
+.side_player_icon:nth-child(2){
+    color: #737373;
+}
+
+.side_player_icon p::after{
+    content: "Brano nome";
+    display: block;
+    color: #737373;
+    font-size: 14px;
+}
+
 .player_thumb{
-    width: 30%;
+    width: 55px;
 }
 
-.button_player{
-    font-size: 2vw;
-    color: white;
+/* MEDIA QUERY PLAYER */
+
+@media screen and (max-width: 638px) {
+    .side_player .side_player_icon:nth-child(2){
+        flex-direction: column;
+    }
 }
 
-.viewport-main{
-    background-color: yellow;
+@media screen and (max-width: 551px){
+
+    .player_thumb{
+        width: 40px;
+    }
 }
 
 .menu{
