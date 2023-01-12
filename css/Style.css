@@ -1,0 +1,85 @@
+
+/* Regole generali */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+ul,li,ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+:root{
+    --darkblue: #141922
+    --grey: #282828
+    --gree: #ADFF2F
+    --lightgrey: #A3A3A3
+    --lightwhite: #A3A3A3
+}
+
+/* ROW e CONTAINER generali */
+
+.row{
+    display: flex;
+}
+
+/* Regole per viewport e layout*/
+
+.container-viewport{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.viewport-main{
+    flex-grow: 1;
+    display: flex;
+}
+
+.viewport-aside{
+    height: 90px;
+    flex-shrink: 0;
+}
+
+.menu{
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.page{
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 551px){
+    .menu{
+        width: 80px;
+        flex-shrink: 0;
+    }
+}
+
+.viewport-main{
+    background-color: yellow;
+}
+
+.viewport-aside{
+    background-color: red;
+}
+
+.menu{
+    background-color: black;
+}
+
+.page{
+    background-color: green;
+}
