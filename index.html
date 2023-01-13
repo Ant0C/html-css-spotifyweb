@@ -17,7 +17,61 @@
     <div class="viewport-main">
 
         <header class="menu">
-
+            <div class="container_menu">
+                <div class="col_menu">
+                    <img class="menu_thumb" src="./img/logo.svg" alt="logo">
+                </div>
+                <div class="col_menu">
+                    <a href="#" class="color-white">
+                        <i class="fa-sharp fa-solid fa-house icon"></i>Home
+                    </a>
+                    <a href="#">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass icon"></i>Cerca
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-lines-leaning icon"></i>La tua libreria
+                    </a>
+                </div>
+                <div class="col_menu">
+                    <ul>
+                        <h3 class="color-white">Playlist</h3>
+                        <li>
+                            <i class="fa-solid fa-plus plus"></i>Crea Playlist
+                        </li>
+                        <li>
+                            <a href="#">Nome playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome playlist</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col_menu instal">
+                    <a href="#">
+                        <i class="fa-regular fa-circle-down icon_instal"></i>Installa app
+                    </a>
+                </div>
+                <div class="col_menu">
+                    <a href="#" class="color-white">
+                        <i class="fa-regular fa-circle-user user"></i>John Doe
+                    </a>
+                </div>
+            </div>
         </header>
 
         <main class="page">
@@ -26,10 +80,15 @@
 
     </div>
 
+    <!-- Section player -->
+
     <div class="viewport-aside">
 
-        <aside class="row row-player">
-            <div class="col_player side_player">
+        <!-- Player/toolbar -->
+        <!-- Parte laterale sinistra player -->
+
+        <aside class="row-player">
+            <div class="side_player_left">
                 <div class="side_player_icon" >
                     <img class="player_thumb" src="./img/sinister.jpeg" alt="ok">
                     <p>Sinister</p>
@@ -40,7 +99,9 @@
                 </div>
             </div>
 
-            <div class="col_player">
+            <!-- Parte centrale player -->
+
+            <div class="central_player">
                 <div class="top_player">
                     <div class="button_player">
                         <i class="fa-solid fa-shuffle"></i>
@@ -64,12 +125,16 @@
                     <p class="col_timeline">4:35</p>
                 </div>
             </div>
+            
+            <!-- Parte laterale destra player -->
 
-            <div class="col_player side_player_icon">
+            <div class="side_player_right">
                 <i class="fa-solid fa-bars"></i>
                 <i class="fa-solid fa-display icon"></i>
-                <i class="fa-solid fa-volume-high  icon"></i>
-                <div></div>
+                <div>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="barr"></div>
+                </div>
             </div>
         </aside>
 
