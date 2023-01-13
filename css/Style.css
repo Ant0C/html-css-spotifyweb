@@ -151,12 +151,12 @@ a{
 /* MEDIA QUERY PLAYER */
 
 @media screen and (max-width: 638px) {
-    .side_player .side_player_icon:nth-child(2){
+    .side_player_left .side_player_icon:nth-child(2){
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 551px){
+@media screen and (max-width: 575px){
 
     .player_thumb{
         width: 40px;
@@ -168,7 +168,7 @@ a{
 .container_menu{
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 5px 20px;
+    padding: 10px 10px 5px 10px;
     gap: 20px;
     color: var(--lightgrey);
 }
@@ -192,8 +192,8 @@ a{
     margin-right: 8px;
 }
 
-.menu_thumb{
-    width: 140px;
+.col_menu img{
+    width: 85%;
 }
 
 .instal::after{
@@ -223,4 +223,59 @@ a{
     margin-right: 8px;
     color: black;
     background-color: var(--lightwhite);
+}
+
+/* Regole css per menu mobile */
+
+.container_small_menu{
+    display: none;
+}
+
+.col_small_menu{
+    padding: 20px 20px 5px 20px;
+    gap: 12px;
+    display: flex;
+}
+
+.samll_menu img{
+    width: 85%;
+}
+
+.col_menu_small:nth-child(2){
+    flex-grow: 1;
+}
+
+.col_menu_small .icon{
+    font-size: 20px;
+    color: var(--lightgrey);
+}
+
+.icon_instal_small{
+    font-size: 12px;
+    color: var(--lightgrey);
+}
+
+.user_small{
+    font-size: 28px;
+}
+
+/* MEDIA QUERY HEADER */
+
+@media screen and (max-width: 575px){
+    .container_small_menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col_menu_small{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px 5px 10px;
+        gap: 12px;
+    }
+
+    .container_menu{
+        display: none;
+    }
 }
