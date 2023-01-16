@@ -82,8 +82,6 @@ a{
 
 .central_player{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     flex-basis: 40%;
     color: #737373;
@@ -94,17 +92,40 @@ a{
 .top_player{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .button_player:nth-child(3){
     margin-left: 40px;
     margin-right: 20px;
+    font-size: 35px;
 }
 
 .button_player{
     margin-left: 20px;
-    font-size: 35px;
+    font-size: 26px;
     color: white;
+}
+
+.timeline_player{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.progress-indicator{
+    background-color: white;
+	height: 4px;
+	width: 23%;
+}
+
+.progress{
+    background-color: #737373;
+	flex-grow: 1;
+}
+
+.progress,.progress-indicator {
+    border-radius: 999px;
 }
 
 /* Parti laterali player */
@@ -121,7 +142,7 @@ a{
     display: flex;
     align-items: center;
     flex-basis: 230px;
-    padding: 20px 0px 20px 10px;
+    padding: 20px 10px 20px 10px;
     color: white;
     gap: 10px;
 }
