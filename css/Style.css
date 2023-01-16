@@ -356,11 +356,7 @@ a{
     margin-top: 10px;
 }
 
-.recently_song{
-    text-align: center;
-}
-
-.recently_song_2{
+.recently_song,.recently_song_2{
     text-align: center;
 }
 
@@ -390,22 +386,25 @@ a{
     object-fit: cover;
 }
 
-/* MEDIA QUERY parte superiore */
+/* MEDIA QUERY parte inferiore */
 
 @media screen and (max-width: 877px){
+    .list_recently-played{
+        flex-wrap: wrap;
+    }
     .recently_song,.recently_song_2{
-        flex-basis: calc(100%/4);
+        flex-basis: calc(100%/5);
     }
 }
 
 @media screen and (max-width: 636px){
     .recently_song,.recently_song_2{
-        flex-basis: 50%;
+        flex-basis: calc(50% - 10px);
     }
 }
 
 @media screen and (max-width: 575px){
     .recently_song,.recently_song_2{
-        flex-basis: 50%;
+        flex-basis: calc(50% - 10px);
     }
 }
