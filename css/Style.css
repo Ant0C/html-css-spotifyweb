@@ -25,7 +25,6 @@ a{
     --darkblue: #141922;
     --light-darkblue: #080B12;
     --grey: #282828;
-    --gree: #ADFF2F;
     --lightgrey: #A3A3A3;
     --lightwhite: #A3A3A3;
 }
@@ -155,6 +154,7 @@ a{
 }
 
 .side_player_icon:nth-child(2){
+    margin-right: 8px;
     color: #737373;
 }
 
@@ -189,28 +189,47 @@ a{
 .container_menu{
     display: flex;
     flex-direction: column;
-    padding: 10px 10px 5px 10px;
     gap: 20px;
     color: var(--lightgrey);
 }
 
-.col_menu{
+.col_menu,.col_menu_playlist,.col_menu_profile{
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.col_menu:nth-child(3){
-    flex-grow: 1;
-}
-
-.col_menu li{
-    margin: 12px 0px;
+.col_menu_logo{
+    padding: 10px 10px 0px 15px;
 }
 
 .icon{
-    font-size: 20px;
     margin-right: 8px;
+    margin-left: 15px;
+}
+
+.col_menu a:first-child{
+    border-left: 3px solid #ADFF2F;
+}
+
+.col_menu_playlist{
+    flex-grow: 1;
+}
+
+.col_menu_playlist li{
+    margin: 12px 8px 0px 15px;
+}
+
+.col_menu_profile a {
+    margin: 0px 8px 5px 15px;
+}
+
+.plus{
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 8px;
+    color: black;
+    background-color: var(--lightwhite);
 }
 
 .col_menu img{
@@ -229,21 +248,13 @@ a{
 }
 
 .icon_instal{
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 8px;
 }
 
 .user{
-    font-size: 28px;
+    font-size:25px;
     margin-right: 8px;
-}
-
-.plus{
-    font-size: 20px;
-    padding: 5px;
-    margin-right: 8px;
-    color: black;
-    background-color: var(--lightwhite);
 }
 
 /* Regole css per menu mobile */
@@ -272,17 +283,25 @@ a{
 }
 
 .icon_instal_small{
-    font-size: 12px;
+    font-size: 14px;
     color: var(--lightgrey);
 }
 
 .user_small{
-    font-size: 28px;
+    font-size: 25px;
 }
 
 /* MEDIA QUERY HEADER */
 
 @media screen and (max-width: 575px){
+    .menu{
+        justify-content: center;
+    }
+
+    .container_menu{
+        display: none;
+    }
+
     .container_small_menu{
         display: flex;
         flex-direction: column;
@@ -296,8 +315,8 @@ a{
         gap: 12px;
     }
 
-    .container_menu{
-        display: none;
+    .col_menu_small img{
+        width: 30px;
     }
 }
 
@@ -346,6 +365,14 @@ a{
     gap: 20px;
     color: var(--lightgrey);
     font-size: 15px;
+}
+
+.col_genres:first-child::after{
+    content: "";
+    border-bottom: 2px solid #ADFF2F;
+    width: 40px;
+    display: block;
+    margin: 0 auto
 }
 
 .title-genres{
